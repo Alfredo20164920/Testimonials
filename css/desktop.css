@@ -1,12 +1,23 @@
 body {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    min-width: 90%;
+    height: 100vh;
+    margin: 0 auto;
 }
 
 main {
-    /* height: 100vh; */
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, maxmin(100px, auto));
     place-content: center;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .--daniel {
