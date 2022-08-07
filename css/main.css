@@ -11,11 +11,12 @@ html {
     /* Neutral */
     --light-gray: #cfcfcf;
     --light-grayish-blue: #ecf2f8;
+    --light-violet: #A775F1;
 
     /* Typography */
-    --body: 1.8rem;
+    /* --body: 1.8rem; */
     --title: 2rem;
-    --user-name: 1.3rem;
+    --body: 1.3rem;
     --user-label: 1.1rem;
 
     /*Fonts*/
@@ -41,9 +42,7 @@ main {
 }
 
 .card {
-    background-color: var(--primary-violet);
     border-radius: 8px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     padding: 32px;
 }
 
@@ -58,11 +57,10 @@ main {
     height: 28px;
     border-radius: 50%;
     margin-right: 17px;
-    border: 2px solid var(--primary-white);
 }
 
 .user__info .user__name {
-    font-size: var(--user-name);
+    font-size: var(--body);
     font-weight: 500;
     color: var(--primary-white);
 }
@@ -76,16 +74,60 @@ main {
 
 .card__title {
     font-size: var(--title);
+    line-height: 2.4rem;
     font-weight: 600;
     color: var(--primary-white);
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .card__paragraph {
     font-size: var(--body);
+    line-height: 1.8rem;
     font-weight: 500;
     color: var(--light-gray);
     opacity: 70%;
     line-height: 1.5;
 }
 
+.--daniel {
+    background-color: var(--primary-violet);
+}
+
+.--daniel .card__user img {
+    border: 2px solid var(--light-violet);
+}
+
+.--jonathan {
+    background-color: var(--primary-garyish-blue);
+}
+
+.--jonathan .card__user img {
+    border: 2px solid var(--primary-white);
+}
+
+.--jeanette, .--kira {
+    background-color: var(--primary-white);
+}
+
+.--jeanette .user__info .user__name,
+.--jeanette .user__info .user__title,
+.--jeanette .card__title,
+.--jeanette .card__paragraph,
+.--kira .user__info .user__name,
+.--kira .user__info .user__title,
+.--kira .card__title,
+.--kira .card__paragraph {
+    color: var(--primary-garyish-blue);
+}
+
+.--patrick {
+    background-color: var(--primary-blackish-blue);
+}
+
+.--patrick .card__user img {
+    border: 2px solid var(--primary-violet);
+}
+
+.--patrick .card__title {
+    color: var(--light-grayish-blue);
+}
