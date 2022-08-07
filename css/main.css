@@ -44,6 +44,7 @@ main {
 .card {
     border-radius: 8px;
     padding: 32px;
+    z-index: 1;
 }
 
 .card__user {
@@ -87,10 +88,22 @@ main {
     color: var(--light-gray);
     opacity: 70%;
     line-height: 1.5;
+    z-index: 10;
 }
 
 .--daniel {
+    position: relative;
     background-color: var(--primary-violet);
+}
+
+.icon-quote {
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    width: 104px;
+    height: 102px;
+    margin-right: 17px;
+    z-index: -1;
 }
 
 .--daniel .card__user img {

@@ -20,6 +20,10 @@ main {
     justify-content: center;
 }
 
+.icon-quote {
+    right: 80px;
+}
+
 .--daniel {
     grid-column: span 2;
 }
