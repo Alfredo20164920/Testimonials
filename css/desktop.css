@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+}
+
+main {
+    /* height: 100vh; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-content: center;
+}
+
+.--daniel {
+    grid-column: span 2;
+}
+
+.--jeanette {
+    grid-row: 2;
+}
+
+.--patrick {
+    grid-row-start: 2;
+    grid-column: 2 / span 2;
+}
+
+.--kira {
+    grid-row: span 2
+}
