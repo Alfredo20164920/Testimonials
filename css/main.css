@@ -1,0 +1,30 @@
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    /* Primary */
+    --primary-violet: #733fc8;
+    --primary-garyish-blue: #48556a;
+    --primary-blackish-blue: #19212e;
+    --primary-white: #ffffff;
+    /* Neutral */
+    --light-gray: #cfcfcf;
+    --light-grayish-blue: #ecf2f8;
+
+    /* Typography */
+    --body: 1.8rem;
+    --title: 2rem;
+    --user-name: 1.3rem;
+    --user-label: 1.1rem;
+
+    /*Fonts*/
+    --primary-font: 'Barlow Semi Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
